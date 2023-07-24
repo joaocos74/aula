@@ -1,0 +1,29 @@
+def calcular_titulo_em_massa(massa_componente, massa_total):
+    return massa_componente / massa_total
+
+def calcular_porcentagem_em_massa(massa_componente, massa_total):
+    return (massa_componente / massa_total) * 100
+
+# Massa dos componentes A e B (em gramas)
+massa_A = 25.0  
+massa_B = 35.0  
+
+# Massa total da mistura (em gramas)
+massa_total = massa_A + massa_B  
+
+# Cálculo do título em massa de cada componente
+titulo_A = calcular_titulo_em_massa(massa_A, massa_total)
+titulo_B = calcular_titulo_em_massa(massa_B, massa_total)
+
+# Cálculo da porcentagem em massa de cada componente
+porcentagem_A = calcular_porcentagem_em_massa(massa_A, massa_total)
+porcentagem_B = calcular_porcentagem_em_massa(massa_B, massa_total)
+
+# Resultados
+print(f"Massa do componente A: {massa_A:.2f}g")
+print(f"Massa do componente B: {massa_B:.2f}g")
+print(f"Massa total da mistura: {massa_total:.2f}g")
+print(f"Título em massa do componente A: {titulo_A:.2f}")
+print(f"Título em massa do componente B: {titulo_B:.2f}")
+print(f"Porcentagem em massa do componente A: {porcentagem_A:.2f}%")
+print(f"Porcentagem em massa do componente B: {porcentagem_B:.2f}%")
